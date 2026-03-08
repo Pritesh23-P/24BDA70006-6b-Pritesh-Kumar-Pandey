@@ -19,3 +19,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/bank", bankingRoutes);
 
 module.exports = app;
+
+app.get("/", (req, res) => {
+    res.send("Banking JWT API is running 🚀");
+});
